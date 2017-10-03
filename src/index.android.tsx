@@ -30,20 +30,18 @@ export default class Molpe extends React.Component<Props, State> {
           </Body>
         </Header>
 
-        <Content>    
-          {(
-            () => {
-              switch (this.state.currentActiveTab) {
-                case "Recorder" :
-                  return <Recorder />
-                case "Player" : 
-                  return <Player />
-                case "Setting" :
-                  return <Setting />
-              }
+        {(
+          () => {
+            switch (this.state.currentActiveTab) {
+              case "Recorder" :
+                return <Recorder />
+              case "Player" : 
+                return <Player />
+              case "Setting" :
+                return <Setting />
             }
-          ) ()}
-        </Content>
+          }
+        ) ()}
         
       <Footer>
         <FooterTab>

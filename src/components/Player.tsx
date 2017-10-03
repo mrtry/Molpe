@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { AppRegistry } from 'react-native';
-import { Text } from 'native-base';
+import { Content, Text, List, ListItem, } from 'native-base';
 
 export interface State {
 }
@@ -15,9 +15,19 @@ export default class Player extends React.Component<Props, State> {
   
   render() {  
     return (      
-      <Text>
-        Player Component
-      </Text>
+      <Content>
+          <List>
+            <ListItem>
+              <Text>Simon Mignolet</Text>
+            </ListItem>
+            <ListItem>
+              <Text>Nathaniel Clyne</Text>
+            </ListItem>
+            <ListItem>
+              <Text>Dejan Lovren</Text>
+            </ListItem>
+          </List>
+        </Content>
     );
   }
 }
